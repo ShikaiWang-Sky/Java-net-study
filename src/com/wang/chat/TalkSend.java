@@ -20,7 +20,7 @@ public class TalkSend implements Runnable {
     private String toIP;
     private int toPort;
 
-    public TalkSend(String fromIP, String toIP, int toPort) {
+    public TalkSend(int fromPort, String toIP, int toPort) {
         this.fromPort = fromPort;
         this.toIP = toIP;
         this.toPort = toPort;
