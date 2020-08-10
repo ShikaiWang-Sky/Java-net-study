@@ -17,7 +17,7 @@ public class URLDown {
         //1.下载地址
         URL url = new URL("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1597050462137&di=e81d42b6c04eeff13b8011bdcdb7b5e7&imgtype=0&src=http%3A%2F%2Ft8.baidu.com%2Fit%2Fu%3D1484500186%2C1503043093%26fm%3D79%26app%3D86%26f%3DJPEG%3Fw%3D1280%26h%3D853");
 
-        //2.连接到这个资源
+        //2.连接到这个资源 用Http
         HttpURLConnection urlConnection = (HttpURLConnection)url.openConnection();
 
         InputStream inputStream = urlConnection.getInputStream();
