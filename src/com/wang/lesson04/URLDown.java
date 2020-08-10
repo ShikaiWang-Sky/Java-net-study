@@ -30,7 +30,7 @@ public class URLDown {
             Files.delete(path);
             Files.copy(inputStream, path);
         } catch (NoSuchFileException e) {
-            //不存在同名文件，会跑春NoSuchFileException，此时直接copy
+            //不存在同名文件，会抛出NoSuchFileException，此时直接copy
             Files.copy(inputStream, path);
         }
 
