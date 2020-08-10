@@ -38,8 +38,9 @@ public class TalkReceive implements Runnable {
                 byte[] data = packet.getData();
                 String receiveData = new String(data, 0, data.length);
                 System.out.println(msgFrom + "：" + receiveData);
-                if (receiveData.equals("bye"))
+                if ("bye".equals(receiveData)) {
                     break;
+                }
 
             }
         } catch (IOException e) {

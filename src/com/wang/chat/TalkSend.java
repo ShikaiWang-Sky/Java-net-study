@@ -46,8 +46,9 @@ public class TalkSend implements Runnable {
 
                 socket.send(packet);
 
-                if (data.equals("bye"))
+                if ("bye".equals(data)) {
                     break;
+                }
             } catch (IOException e) {
                 e.printStackTrace();
             }

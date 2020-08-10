@@ -24,8 +24,9 @@ public class UDPSenderDemo01 {
 
             socket.send(packet);
 
-            if (data.equals("bye"))
+            if ("bye".equals(data)) {
                 break;
+            }
         }
 
         socket.close();

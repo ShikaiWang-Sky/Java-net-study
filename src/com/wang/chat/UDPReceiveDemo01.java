@@ -22,8 +22,9 @@ public class UDPReceiveDemo01 {
             byte[] data = packet.getData();
             String receiveData = new String(data, 0, data.length);
             System.out.println(receiveData);
-            if (receiveData.equals("bye"))
+            if ("bye".equals(receiveData)) {
                 break;
+            }
         }
 
         socket.close();
